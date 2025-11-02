@@ -46,18 +46,18 @@ This will create `data/parquet/pcapLog.parquet`.
 #### 2. Query using natural language
 
 ```bash
-python -m src.cli query data/parquet/pcapLog.parquet "List all RRC messages"
+python -m src.cli query data/parquet/pcapLog.parquet "list all UE IDs in the pcap with first packet number, last packet number, and message types"
 
-python -m src.cli query data/parquet/pcapLog.parquet "How many UEs attached?"
+python -m src.cli query data/parquet/pcapLog.parquet "trace ue 92 call flow?"
 
-python -m src.cli query data/parquet/pcapLog.parquet "Show handover failures"
+python -m src.cli query data/parquet/pcapLog.parquet "Explain how many UEs are released due to call failure and the reason for failure?"
 ```
 
 #### 3. Query using direct SQL
 
 ```bash
 python -m src.cli query data/parquet/pcapLog.parquet \\
-  "SELECT * FROM packets WHERE protocol = 'RRC' LIMIT 10" --no-llm
+  "SELECT * FROM packets WHERE protocol = 'NGAP' LIMIT 10" --no-llm
 ```
 
 #### 4. Inspect parsed data

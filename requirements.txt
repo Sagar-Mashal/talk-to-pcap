@@ -1,0 +1,18 @@
+# Core dependencies for Talk-to-PCAP
+lxml>=4.9.0
+pandas>=2.0.0
+pyarrow>=12.0.0
+duckdb>=0.9.0
+python-dotenv>=1.0.0
+click>=8.1.0
+tabulate>=0.9.0
+
+# LLM Providers (install based on your choice)
+# For Gemini (default)
+google-generativeai>=0.3.0
+
+# For OpenAI (optional - install if using OpenAI)
+# openai>=1.0.0
+
+# For Anthropic Claude (optional - install if using Anthropic)
+# anthropic>=0.18.0
