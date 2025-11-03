@@ -18,7 +18,7 @@ Natural language query interface for 3GPP LTE/5G PCAP files. Ask questions about
 1. **Prerequisites**:
    - Python 3.9+
    - Wireshark/tshark 4.0+ (for PCAP parsing)
-   - Gemini API key ([get one free](https://makersuite.google.com/app/apikey))
+   - Gemini API key / OpenAPI key / Antropic Key
 
 2. **Install dependencies**:
 ```bash
@@ -210,11 +210,10 @@ MIT
 
 ## Contributing
 
-Contributions welcome! Please see the project's specification documents in `specs/` for architecture and design decisions.
+Contributions welcome!
 
 ## Acknowledgments
 
 - **Wireshark**: Protocol dissectors and tshark CLI
-- **Google Gemini**: Natural language understanding
 - **DuckDB**: Fast analytical queries
 - **LangChain**: LLM orchestration framework
